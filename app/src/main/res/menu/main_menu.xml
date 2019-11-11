@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/AddAct"
+        android:title="Add Act"/>
+
+    <item
+        android:id="@+id/addDay"
+        android:title="Add Day"
+        />
+    <item
+        android:id="@+id/findDay"
+        android:title="Find Day"
+        />
+    <item
+        android:id="@+id/deleteDay"
+        android:title="Delete Day"
+        />
+    <item
+        android:id="@+id/changeDayName"
+        android:title="Change Day Name"
+        />
+
+
+</menu>

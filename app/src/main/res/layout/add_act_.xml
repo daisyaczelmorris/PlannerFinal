@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActActivity">
+
+    <TextView
+        android:text="Activity Name"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/actName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time:"
+        />
+
+    <TableLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow        android:padding="5dp"
+            >
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startHour"
+                android:entries="@array/hours"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startMinute"
+                android:entries="@array/mins"
+                />
+        </TableRow>
+        <TableRow        android:padding="5dp"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: "
+            />
+        </TableRow>
+        <TableRow        android:padding="5dp"
+            >
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dHours"
+                android:entries="@array/dhours"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dMins"
+                android:entries="@array/dmins"
+                />
+        </TableRow>
+        <TableRow android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ActType "
+                />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center_horizontal">
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t1"
+                android:transitionName="0"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t2"
+                android:transitionName="1"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t3"
+                android:transitionName="2"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t4"
+                android:transitionName="3"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t5"
+                android:transitionName="4"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t6"
+                android:transitionName="5"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t7"
+                android:transitionName="6"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t8"
+                android:transitionName="7"
+                />
+        </TableRow>
+        <TableRow >
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t9"
+                android:transitionName="8"
+
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t10"
+                android:transitionName="9"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t11"
+                android:transitionName="10"
+                />
+            <TextView
+                style="@style/acttypeTheme"
+                android:id="@+id/t12"
+                android:transitionName="11"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow android:padding="5dp">
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveActivity"
+        android:text="Done"
+        android:onClick="Done"
+        />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addType"
+            android:text="New Type" />
+
+        <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:visibility="gone"
+        android:onClick="Delete"
+        />
+    </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".FindDay"
+    >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+
+        />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:text="Search"
+        android:layout_column="1"
+        android:onClick="Search" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</GridLayout>
